@@ -1,0 +1,106 @@
+/* importação da fonte - Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/* css reset */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* referência do Google Fonts */
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+/* ul{
+    list-style-type: none;
+} */
+/* define toda a área que o site ocupa nesse caso 1440px*/
+/* definir a largura e margem  */
+.embrulho{
+    width: 1200px;
+    /* vertical e horizontal */
+    margin: 0 auto;
+}
+header{
+    /* VH é 25% da largura relativo ao dispositivo usado pelo usuário */
+    height: 25vh;
+    
+}
+
+.centralizar_elementos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* # chama ID */
+#img_fotoperfil{
+    /* para as 4 bordas arredonda o raio */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    }
+
+    #img_section1{
+        /* ./ serve para achar arquivos da mesma pasta */
+        /* ../ serve para sair da pasta */
+        background-image: url(../img/foto2.jpg);
+        /* para caber dentro do espaço na largura */
+        background-size: cover;
+        /*  primeiro valor é do eixo X e o segundo valor é do eixo Y */
+        /* coloca os dois para ter certeza de quer vai centralizar */
+        background-position:center center;
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 300px;
+    }
+    #section1{
+        display: flex;
+        justify-content: space-between;
+    }
+    #textos_section1{
+        /*  a porcentagem é sempre relativa ao pai dele */
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .distancia{
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+    #section2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #conteudo_section2{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    .artigo_section2{
+        width:46%;
+        background-color: #faab96;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    ul{
+        padding-left: 25px;
+    }
+
+    footer{
+        background-color: #b44126;
+        /* VH unidade de medida relaticva a tela do navegador que está abrindo o site */
+        height: 5vh;
+    }
+    footer p{
+        height: 100%;
+    }
